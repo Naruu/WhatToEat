@@ -7,7 +7,7 @@ ex) Cream cheese is on sale -> recommend cream cheese apple tart
 
 Steps
 1. Build DB for food, ingredient.
-1) ingredient - month/season
+1) ingredient - month/season (http://foodsafetykorea.go.kr/portal/sensuousmenu/recipeNtrtList.do)
 2) menu - ingredient
 
 2. get sale inforamtion
@@ -28,7 +28,7 @@ Steps
 5) include/exclude this ingredient option
 6) filter option : pick one ingredient : only show menus with selected ingredients
 
-#########################3
+
 Additionals
 1) recipe/suggestion of restaurants nearby.
 2) recommendation with consideration on the weather/temperature.
