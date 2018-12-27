@@ -1,10 +1,11 @@
 # WhatToEat
 #### Menu/reciepe recommendation website based on seasonal ingredients & sale product.
 
-## Goal : Build a website that recommends menu/food based on the seasonal ingredients, and sale information.
-ex) Apple is fresh in Autummn -> recommend apple pie
+#### Goal : Build a website that recommends menu/food based on the seasonal ingredients, and sale information.
+ex) Apple is fresh in Autummn -> recommend apple pie  
 ex) Cream cheese is on sale -> recommend cream cheese apple tart
 
+  
 # Steps
 ## 1. Build DB for food, ingredient.
 1) ingredient - month/season (http://foodsafetykorea.go.kr/portal/sensuousmenu/recipeNtrtList.do)
@@ -15,7 +16,6 @@ ex) Cream cheese is on sale -> recommend cream cheese apple tart
 - get the list of ingredients that is cheaper than yesterday
 2) several supermarkets : homeplus(/emart/lotte mart. default : homeplus -> but later let user select the supermarket)
 - get the list of items that are on sale
-
 => once get the result, save it on the database
 
 ## 3. Make an website.
@@ -28,7 +28,7 @@ ex) Cream cheese is on sale -> recommend cream cheese apple tart
 5) include/exclude this ingredient option
 6) filter option : pick one ingredient : only show menus with selected ingredients
 
-
+  
 # Additionals
 1) recipe/suggestion of restaurants nearby.
 2) recommendation with consideration on the weather/temperature.
