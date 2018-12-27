@@ -1,7 +1,7 @@
 # WhatToEat
-## Menu/reciepe recommendation website based on seasonal ingredients & sale product.
+#### Menu/reciepe recommendation website based on seasonal ingredients & sale product.
 
-# Goal : Build a website that recommends menu/food based on the seasonal ingredients, and sale information.
+## Goal : Build a website that recommends menu/food based on the seasonal ingredients, and sale information.
 ex) Apple is fresh in Autummn -> recommend apple pie
 ex) Cream cheese is on sale -> recommend cream cheese apple tart
 
@@ -23,7 +23,7 @@ ex) Cream cheese is on sale -> recommend cream cheese apple tart
 2) show ingredients that are on sale
 3) suggest menu/food based on the combination of seasonal ingredient and on sale product.
 
-## +)
+#### +)
 4) show recipe/related restaurant(nearby)
 5) include/exclude this ingredient option
 6) filter option : pick one ingredient : only show menus with selected ingredients
