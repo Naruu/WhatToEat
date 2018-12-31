@@ -29,21 +29,23 @@ def parse_seaonal(url) :
     return rows
 
 def connect_db() :
-    mydb= mysql.connector.connect(
+    conn= mysql.connector.connect(
         host = "localhost",
-        user='root'
+        user='root', password = '0000', database = 'eatwhat', auth_plugin='mysql_native_password'
     )
-    cursor = mydb.cursor()
-    return cursor
+    return conn
 
 def write_db(cursor, cols, values) :
-    cursor.excute("use eatwhat")
     sql = "INSERT INTO seasonal_ingredients"
     for v in values :
-        print(sql+cols, 'values', str(v) +';')
-        ##cursor.execute(sql+cols, 'values', str(v) +';')
+        query = sql + cols +' values '+str(v)+';'
+        cursor.execute(query)
+        print(query)
 
-##rows = parse_seaonal('http://www.nongsaro.go.kr/portal/ps/psr/psrb/monthFdLst.ps?menuId=PS03924&code=251004')
+rows = parse_seaonal('http://www.nongsaro.go.kr/portal/ps/psr/psrb/monthFdLst.ps?menuId=PS03924&code=251004')
 
-cursor = connect_db()
-write_db(cursor,'(month, name, category)', rows )
+conn = connect_db()
+cursor = conn.cursor()
+write_db(cursor,'(name, month, category)', rows)
+conn.commit()
+conn.close()
