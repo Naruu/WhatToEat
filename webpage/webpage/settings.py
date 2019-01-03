@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'eatwhat',
 ]
 
 MIDDLEWARE = [
@@ -76,11 +77,11 @@ WSGI_APPLICATION = 'webpage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.path.join(BASE_DIR, 'eatwhat'),
-        'user' : 'root',
-        'password' : '0000',
-        'host' : 'localhost',
-        'auth_plugin' : 'mysql_native_password',
+        'NAME': 'eatwhat',
+        'USER' : 'root',
+        'PASSWORD' : '0000',
+        'HOST' : 'localhost',
+        'CHARSET' : 'UTF8',
     }
 }
 
