@@ -16,3 +16,6 @@ class SeasonalIngredients(models.Model):
     class Meta:
         managed = False
         db_table = 'seasonal_ingredients'
+
+    def __str__(self):
+        return self.name
