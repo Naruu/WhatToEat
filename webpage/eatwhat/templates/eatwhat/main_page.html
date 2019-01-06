@@ -5,6 +5,12 @@
     <title>Food of the month</title>
 </head>
 <body>
+<p> food of the month</p>
+<p>Choose the month </p>
+<form action = "" method = 'get' name = 'month'>
+    {{ form }}
+</form>
+
 {%if food_list %}
 <ul>
     {% for food in food_list %}
